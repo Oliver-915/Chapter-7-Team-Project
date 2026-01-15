@@ -1,5 +1,5 @@
 Chapter-7-Team-Project
-Program name: Ezee
+Program name: Ezee dice game
 Brody D, Oliver Albert
 
 <Ezee> Description
