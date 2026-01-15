@@ -4,7 +4,18 @@ def main(): #Brody
     #accepts no arguments
     #calls all functions
     #returns nothing
-    pass
+    print('Welcome to the Rolling Dice Game!')
+    print('Would you like to play? (y/n)')
+    play = input(':> ')
+    if play.lower() == 'y':
+        dice = roll_die()
+        
+    elif play.lower() == 'n':
+        print('\nRolling Dice Game Closed.')
+        
+    else:
+        print('\nPlease enter a valid input.\n')
+        main()
 
 def output_dice(dice): #Brody
     #accepts dice
@@ -16,7 +27,9 @@ def roll_die(): #Brody
     #accepts no arguments
     #rolls an interger from 1-6
     #returns a random interger from 1-6
-    pass
+    for num in range(12)
+        dice = random.randint(0,6)
+        ##MAKE A LIST AND ADD IT TO THE LIST MAYBE IN MAIN INSTEAD OF HEREEEEEEEEEEEEEEEE
 
 def first_roll(): #Brody
     #accepts no arguments
