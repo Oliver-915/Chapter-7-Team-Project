@@ -21,7 +21,7 @@ The program is a dice simulation game. The goal is to role 12 dice as many times
 ### <program_name> Flowchart
 ```mermaid
 graph TD;
-  A-->B;
+  main-->B;
   A-->C;
   A-->D;
   A-->E;
