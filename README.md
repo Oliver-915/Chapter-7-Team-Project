@@ -1,9 +1,3 @@
-Chapter-7-Team-Project
-Program name: Ezee dice game
-Brody D, Oliver Albert
-
-<Ezee> Description
-The program is a dice simulation game. The goal is to role 12 dice as many times to get the same number.
 
 Function 1 (main): \Accepts no arguments Calls all functions to play the number of games specified
 Function 2 (outputdice(dice)): Accepts dice Outputs each die in the list
@@ -18,50 +12,75 @@ Function 9 (reroll_many(dice)): Accepts a list of dice Calls list_unmatched_dice
 
 
 
-Function Diagrams
+Program name: Ezee dice game
+Brody Douglass, Oliver Albert
 
-main()	<return_type:>	author: Brody
-argument:type	takes input from the user for Nothing	
-time:integer	calculates rolls	outputs nothing
-name:string	takes input for name nothing	returns total
+## <EzeeDiceGame> Description
+The program is a dice simulation game. The goal is to role 12 dice as many times to get the same number.
 
-output_dice(dice)	<return_type:>	author: Brody
-argument:type	takes input from the user for dice	
-time:integer	calculates dice	outputs dice
-name:string	takes input for name list	returns total
+### <program_name> Flowchart
+```main -->
+graph TD;
+  A-->B;
+  A-->C;
+  A-->D;
+  A-->E;
+```
 
-first_role()	<return_type:>	author: brody
-argument:type	takes input from the user for none
-time:integer	calculates 12	outputs none
-name:string	takes input for name count	returns total
+#### Function Diagrams
 
-count_frequency(dice, number) <return_type:>	author: Brody
-argument:type	takes input from the user for dice and number
-time:integer	calculates frequency	outputs none
-name:string	takes input for name nothing	returns total
-
-find_mode(dice)	<return_type:>	author: Oliver
-argument:type	takes input from the user for dice	
-time:integer	calculates mode	outputs none
-name:string	takes input for name nothing	returns total
-
-list_unmatched_dice(dice) return_type:>	author: Oliver
-argument:type	takes input from the user for dice
-time:integer	calculates unmatched dice	outputs none
-name:string	takes input for name none	returns total
-
-reroll_one(dice, index)	<return_type:>	author: Oliver
-argument:type	takes input from the user for dice and index	
-time:integer	calculates one die	outputs none
-name:string	takes input for name none	returns total
-
-reroll_many(dice) <return_type:>	author: Brody
-argument:type	takes input from the user for dice values	
-time:integer	calculates reroles outputs none
-name:string	takes input for name none	returns total
-
-roll_die() <return_type:>	author: Brody
-argument:type	takes input from the user for none
-time:integer	calculates 12 roles	outputs none
-name:string	takes input for name none	returns total
+| `main`    |               |  author  brody   |
+| ------------------ | ------------- | ------------ |
+| `argument:type`    | takes input from the user for nothing  |              |
+| `time:integer`     | calculates roles  | outputs nothing             |
+| `name:string`      | takes input for name none | returns total |
+***
+| `output_dice(dice)`    |               |     author brody   |
+| ------------------ | ------------- | ------------ |
+| `argument:type`    | takes input from the user for dice  |              |
+| `time:integer`     | calculates dice  | outputs dice             |
+| `name:string`      | takes input for name list | returns total |
+***
+| `first_role()`    |               |     author brody   |
+| ------------------ | ------------- | ------------ |
+| `argument:type`    | takes input from the user for none  |              |
+| `time:integer`     | calculates 12 rolls  | outputs rolls           |
+| `name:string`      | takes input for name count | returns total |
+***
+| `output_dice(dice)`    |               |     author brody   |
+| ------------------ | ------------- | ------------ |
+| `argument:type`    | takes input from the user for dice  |              |
+| `time:integer`     | calculates dice  | outputs dice             |
+| `name:string`      | takes input for name list | returns total |
+***
+| `count_frequency(dice, number)`    |               |     author brody   |
+| ------------------ | ------------- | ------------ |
+| `argument:type`    | takes input from the user for dice  |              |
+| `time:integer`     | calculates dice ands number  | outputs frequency          |
+| `name:string`      | takes input for name none | returns total |
+***
+| `find_mode(dice)`    |               |     author oliver  |
+| ------------------ | ------------- | ------------ |
+| `argument:type`    | takes input from the user for dice  |              |
+| `time:integer`     | calculates dice  | outputs dice             |
+| `name:string`      | takes input for name none2 | returns total |
+***
+| `list_unmatched_dice(dice)`    |               |     author oliver   |
+| ------------------ | ------------- | ------------ |
+| `argument:type`    | takes input from the user for dice  |              |
+| `time:integer`     | calculates unmatched  | outputs none          |
+| `name:string`      | takes input for name none | returns total |
+***
+| `reroll_one(dice, index)`    |               |     author oliver   |
+| ------------------ | ------------- | ------------ |
+| `argument:type`    | takes input from the user for dice and index  |              |
+| `time:integer`     | calculates reroll | outputs reroll           |
+| `name:string`      | takes input for none list | returns total |
+***
+| `reroll_many(dice)`    |               |     author oliver   |
+| ------------------ | ------------- | ------------ |
+| `argument:type`    | takes input from the user for dice values  |              |
+| `time:integer`     | calculates reolls  | outputs rerolls            |
+| `name:string`      | takes input for name list | returns total |
+***
 
