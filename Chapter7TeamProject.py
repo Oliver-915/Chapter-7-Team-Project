@@ -1,4 +1,5 @@
 import random
+import statistics as stats
 
 def main(): #Brody
     #accepts no arguments
@@ -8,8 +9,26 @@ def main(): #Brody
     print('Would you like to play? (y/n)')
     play = input(':> ')
     if play.lower() == 'y':
-        dice = roll_die()
-        
+        index = [] * 12
+        for num in range(12):
+            dice = roll_die()
+            index.append(dice)
+            
+        print(index)
+        print('-----Roll # 1-----')
+        count = 1
+        index_count = 0
+        for num in range(9):
+            print(f'Die	 {count}: {index[index_count]}')
+            count = count + 1
+            index_count = index_count + 1
+            
+        for num in range(3):
+            print(f'Die	{count}: {index[index_count]}')
+            count = count + 1
+            index_count = index_count + 1
+            
+        number = find_mode(dice, index)
     elif play.lower() == 'n':
         print('\nRolling Dice Game Closed.')
         
@@ -27,27 +46,28 @@ def roll_die(): #Brody
     #accepts no arguments
     #rolls an interger from 1-6
     #returns a random interger from 1-6
-    for num in range(12)
-        dice = random.randint(0,6)
-        ##MAKE A LIST AND ADD IT TO THE LIST MAYBE IN MAIN INSTEAD OF HEREEEEEEEEEEEEEEEE
+    dice = random.randint(1,6)
+    return dice
 
-def first_roll(): #Brody
+def first_roll(): #Oliver
     #accepts no arguments
     #uses roll_die() to generate a list of 12 random intergers
     #returns a list of 12 random intergers
     pass
 
-def count_frequency(dice, number): #Brody
-    #accepts dice and number
+def count_frequency(dice, index): #Brody
+    #accepts dice and index
     #finds how often the mode appears
     #returns how often the that target value occurs in the list
-    pass
+    find_mode = stats.mode(index)
+    return find_mode
 
-def find_mode(dice): #Oliver
-    #accepts dice
+def find_mode(dice, index): #Brody
+    #accepts dice and index
     #uses count_frequency(dice, number) to determine how often each number occurs
     #returns the mode
-    pass
+    find_mode = count_frequency(dice, index)
+    print(f'The mode is: {find_mode}')
 
 def list_unmatched_dice(dice): #Oliver
     #accepts dice
