@@ -19,7 +19,7 @@ Brody Douglass, Oliver Albert
 The program is a dice simulation game. The goal is to role 12 dice as many times to get the same number.
 
 ### <program_name> Flowchart
-```main -->
+```mermaid
 graph TD;
   A-->B;
   A-->C;
