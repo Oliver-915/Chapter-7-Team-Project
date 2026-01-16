@@ -19,37 +19,49 @@ Function 9 (reroll_many(dice)): Accepts a list of dice Calls list_unmatched_dice
 
 
 Function Diagrams
-contact_manager	<return_type: null>	author: Oliver Albert
+
+main()	<return_type:>	author: Brody
 argument:type	takes input from the user for ____	
 time:integer	calculates ______	outputs ____
 name:string	takes input for name ___	returns total
 
-function name2	<return_type:>	author: Oliver Albert
+function name2	<return_type:>	author: _____
 argument:type	takes input from the user for ____	
 time:integer	calculates ______	outputs ____
 name:string	takes input for name ___	returns total
 
-function name3	<return_type:>	author: Oliver Albert
+function name3	<return_type:>	author: _____
 argument:type	takes input from the user for ____	
 time:integer	calculates ______	outputs ____
 name:string	takes input for name ___	returns total
 
-contact_search	<return_type: string>	author: Allen Le
-takes input from the user for searching		
-finds contacts and outputs it	outputs contacts	
-returns name, number, address, email		
-
-contact_edit	<return_type: no>	author: Allen Le
-takes input from the user for changes		
-changes in temp file and replaces contacts_txt	outputs changed contacts.txt file	
-returns nothing		
-
-contact_delete	<return_type: boolean>	author: Allen Le
-takes input from contact_search		
-removes input contacts_txt	outputs changed contacts.txt file	
-takes input for name	returns conformation boolean	
-
-function name7	<return_type:>	author: Oliver Albert
+function name4 <return_type:>	author: _____
 argument:type	takes input from the user for ____	
 time:integer	calculates ______	outputs ____
 name:string	takes input for name ___	returns total
+
+function name5	<return_type:>	author: _____
+argument:type	takes input from the user for ____	
+time:integer	calculates ______	outputs ____
+name:string	takes input for name ___	returns total
+
+function name6 return_type:>	author: _____
+argument:type	takes input from the user for ____	
+time:integer	calculates ______	outputs ____
+name:string	takes input for name ___	returns total
+
+function name7	<return_type:>	author: _____
+argument:type	takes input from the user for ____	
+time:integer	calculates ______	outputs ____
+name:string	takes input for name ___	returns total
+
+function name8	<return_type:>	author: _____
+argument:type	takes input from the user for ____	
+time:integer	calculates ______	outputs ____
+name:string	takes input for name ___	returns total
+
+function name9 <return_type:>	author: _____
+argument:type	takes input from the user for ____	
+time:integer	calculates ______	outputs ____
+name:string	takes input for name ___	returns total
+
