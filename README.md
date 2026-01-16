@@ -21,47 +21,47 @@ Function 9 (reroll_many(dice)): Accepts a list of dice Calls list_unmatched_dice
 Function Diagrams
 
 main()	<return_type:>	author: Brody
-argument:type	takes input from the user for ____	
-time:integer	calculates ______	outputs ____
-name:string	takes input for name ___	returns total
+argument:type	takes input from the user for Nothing	
+time:integer	calculates rolls	outputs nothing
+name:string	takes input for name nothing	returns total
 
-function name2	<return_type:>	author: _____
-argument:type	takes input from the user for ____	
-time:integer	calculates ______	outputs ____
-name:string	takes input for name ___	returns total
+output_dice(dice)	<return_type:>	author: Brody
+argument:type	takes input from the user for dice	
+time:integer	calculates dice	outputs dice
+name:string	takes input for name list	returns total
 
-function name3	<return_type:>	author: _____
-argument:type	takes input from the user for ____	
-time:integer	calculates ______	outputs ____
-name:string	takes input for name ___	returns total
+first_role()	<return_type:>	author: brody
+argument:type	takes input from the user for none
+time:integer	calculates 12	outputs none
+name:string	takes input for name count	returns total
 
-function name4 <return_type:>	author: _____
-argument:type	takes input from the user for ____	
-time:integer	calculates ______	outputs ____
-name:string	takes input for name ___	returns total
+count_frequency(dice, number) <return_type:>	author: Brody
+argument:type	takes input from the user for dice and number
+time:integer	calculates frequency	outputs none
+name:string	takes input for name nothing	returns total
 
-function name5	<return_type:>	author: _____
-argument:type	takes input from the user for ____	
-time:integer	calculates ______	outputs ____
-name:string	takes input for name ___	returns total
+find_mode(dice)	<return_type:>	author: Oliver
+argument:type	takes input from the user for dice	
+time:integer	calculates mode	outputs none
+name:string	takes input for name nothing	returns total
 
-function name6 return_type:>	author: _____
-argument:type	takes input from the user for ____	
-time:integer	calculates ______	outputs ____
-name:string	takes input for name ___	returns total
+list_unmatched_dice(dice) return_type:>	author: Oliver
+argument:type	takes input from the user for dice
+time:integer	calculates unmatched dice	outputs none
+name:string	takes input for name none	returns total
 
-function name7	<return_type:>	author: _____
-argument:type	takes input from the user for ____	
-time:integer	calculates ______	outputs ____
-name:string	takes input for name ___	returns total
+reroll_one(dice, index)	<return_type:>	author: Oliver
+argument:type	takes input from the user for dice and index	
+time:integer	calculates one die	outputs none
+name:string	takes input for name none	returns total
 
-function name8	<return_type:>	author: _____
-argument:type	takes input from the user for ____	
-time:integer	calculates ______	outputs ____
-name:string	takes input for name ___	returns total
+reroll_many(dice) <return_type:>	author: Brody
+argument:type	takes input from the user for dice values	
+time:integer	calculates reroles outputs none
+name:string	takes input for name none	returns total
 
-function name9 <return_type:>	author: _____
-argument:type	takes input from the user for ____	
-time:integer	calculates ______	outputs ____
-name:string	takes input for name ___	returns total
+roll_die() <return_type:>	author: Brody
+argument:type	takes input from the user for none
+time:integer	calculates 12 roles	outputs none
+name:string	takes input for name none	returns total
 
