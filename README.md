@@ -11,7 +11,7 @@ graph TD;
   main-->roll_die;
   main-->main;
   main-->output_dice;
-  A-->E;
+  roll_die-->first_roll;
 ```
 
 #### Function Diagrams
