@@ -10,6 +10,10 @@ The program is a dice simulation game. The goal is to role 12 dice as many times
 graph TD;
   main-->roll_die;
   main-->main;
+  main-->main;
+  main-->main;
+  main-->main;
+  main-->main;
   main-->output_dice;
   roll_die-->first_roll;
 ```
