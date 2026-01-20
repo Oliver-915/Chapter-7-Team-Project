@@ -1,17 +1,4 @@
 
-Function 1 (main): \Accepts no arguments Calls all functions to play the number of games specified
-Function 2 (outputdice(dice)): Accepts dice Outputs each die in the list
-Function 3 (roll_die): Accepts no arguments Returns a random integer from 1 to 6
-Function 4 (first_roll):]Accepts no arguments Uses roll_die to generate a list of 12 integers Returns a list of 12 random integers
-Function 5 (count_frequency(dice, number): Accepts a list of 12 random integers and a target value Returns how often that target value occurs in the list
-Function 6 (find_mode(dice)): Accepts a list of dice. Uses count_frequency(dice, number) to determine how often each number occurs. Returns the mode
-Function 7 (list_unmatched_dice(dice)): Accepts a list of dice Determines which dice need rerolled Returns a list of indexes to reroll
-Function 8 (reroll_one(dice, index)): Accepts a list of dice and an index. Uses roll_die to reroll that index Returns a new list with that index rerolled
-Function 9 (reroll_many(dice)): Accepts a list of dice Calls list_unmatched_dice() and reroll_one() to reroll each die != the mode. Returns a list of rerolled dice.
-
-
-
-
 Program name: Ezee dice game
 Brody Douglass, Oliver Albert
 
