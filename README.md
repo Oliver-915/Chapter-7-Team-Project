@@ -8,9 +8,9 @@ The program is a dice simulation game. The goal is to role 12 dice as many times
 ### <EZEE dice game> Flowchart
 ```mermaid
 graph TD;
-  main-->B;
-  A-->C;
-  A-->D;
+  main-->roll_die;
+  main-->main;
+  main-->output_dice;
   A-->E;
 ```
 
