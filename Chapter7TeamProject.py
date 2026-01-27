@@ -15,10 +15,9 @@ def main():
             index.append(dice)
         asdasdasdasd = output_dice(dice, index)
         
-        number = find_mode(dice, index)
-        print(f'The mode is {number}')
+    
         
-        reroll = list_unmatched_dice(dice, index, number)
+    
         
     elif play.lower() == 'n':
         print('\nEzee Closed.')
@@ -59,7 +58,10 @@ def first_roll():
     #accepts no arguments
     #uses roll_die() to generate a list of 12 random intergers
     #returns a list of 12 random intergers
-    pass
+    dice = []
+    for _ in range(12):
+        dice.append(roll_die())
+    return dice
 
 def count_frequency(dice, index):
     #accepts dice and index
@@ -68,36 +70,63 @@ def count_frequency(dice, index):
     find_mode = stats.mode(index)
     return find_mode
 
-def find_mode(dice, index):
-    #accepts dice and index
-    #uses count_frequency(dice, number) to determine how often each number occurs
-    #returns the mode
-    find_mode = count_frequency(dice, index)
-    number = find_mode
-    return number
+def find_mode(dice):
+    # accepts a list of dice
+    # finds which number appears the most
+    # returns the mode
 
-def list_unmatched_dice(dice, index, number):
-    #accepts dice
-    #determines which dice need to be rerolled
-    #returns a list of indexes to reroll
-    index.sort()
-    print(index)
-    
-    if dice in index != number:
-        index.remove(mode)
-        
-    else:
-        print('Thank You For Playing Ezee!')
+    mode = dice[0]
+    highest_count = 0
+
+    for number in range(1, 7):
+        count = count_frequency(dice, number)
+        if count > highest_count:
+            highest_count = count
+            mode = number
+
+    return mode
+
+def list_unmatched_dice(dice):
+    # accepts a list of dice
+    # finds which dice are not equal to the mode
+    # returns a list of indexes to reroll
+
+    mode = find_mode(dice)
+    indexes = []
+
+    for i in range(len(dice)):
+        if dice[i] != mode:
+            indexes.append(i)
+
+    return indexes
 
 def reroll_one(dice, index):
-    #accepts dice and index
-    #calls roll_die() to reroll that index
-    #returns a new list with that index rerolled
-    pass
+    # accepts a list of dice and an index
+    # rerolls the die at that index
+    # returns the updated list
+
+    dice[index] = roll_die()
+    return dice
 
 def reroll_many(dice):
-    #accepts dice
-    #calls list_unmatched_dice(dice) and reroll_one(dice, index) to reroll each die != the mode
-    #returns a list of rerolled dice
-    pass
+    # accepts a list of dice
+    # rerolls all dice that are not the mode
+    # returns the final list
 
+    rolls = 1
+
+    while True:
+        output_dice(dice)
+
+        unmatched = list_unmatched_dice(dice)
+
+        if len(unmatched) == 0:
+            break
+
+        for index in unmatched:
+            dice = reroll_one(dice, index)
+
+        rolls += 1
+
+    return dice, rolls
+   
